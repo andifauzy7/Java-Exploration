@@ -46,8 +46,7 @@ public class Strings {
 
 
         // Andi F. Dewantara.
-        String nama = "Andi";
-        String second = "Fauzy";
+        String nama = "Andi", second = "Fauzy";
         String lengkap = nama + second;
 
         int angka = 7;
@@ -74,7 +73,33 @@ public class Strings {
 
         awal = "Dewantara";
         System.out.println(awal.charAt(3));
-        // Hasil False
+
+        System.out.println(awal.substring(0));
+        System.out.println(awal.substring(0,3));
+        // System.out.println(awal.substring(0,9));
+        // System.out.println(awal.substring(4,3));
+        System.out.println(awal + "!");
+        System.out.println(awal + awal.substring(0,3));
+
+        if(awal.length()==0 && awal.equals("")){
+            System.out.println("Kosong");
+        } else {
+            System.out.println("Tidak Kosong");
+        }
+
+        System.out.println(awal.charAt(0));
+        System.out.println(awal.codePointAt(0));
+        System.out.println(awal.offsetByCodePoints(0,3));
+        System.out.println(awal.equals("Dewantara"));
+        System.out.println(awal.length());
+
+        StringBuilder Tester = new StringBuilder();
+        awal = "Dewantara";
+        Tester.append(1);
+        Tester.append(awal);
+        String kata = Tester.toString();
+        Tester = Tester.delete(0,2);
+        System.out.println(Tester);
 
 
         // Fahmi Widianto.

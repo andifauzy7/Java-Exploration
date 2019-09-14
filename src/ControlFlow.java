@@ -67,6 +67,55 @@ public class ControlFlow {
         // Aji M. Zapar.
 
         // Andi F. Dewantara.
+        String awal = "Dewantara";
+        if(awal.length()==0 && awal.equals("")){
+            System.out.println("Kosong");
+        } else {
+            System.out.println("Tidak Kosong");
+        }
+
+        int angka = 5;
+        if(angka<5){
+            System.out.println("Zzzz...");
+        } else if(angka==5){
+            System.out.println("Bingo!");
+        } else if(angka>5){
+            System.out.println("Roar!");
+        }
+
+        int i=0;
+        while(i<=5){
+            if(i==3)continue;
+            System.out.println("Bingow!" + i);
+            i++;
+        }
+
+        do {
+            System.out.println("Buzz!");
+            i++;
+        } while (i<0);
+
+        for(int j=0; j<5; j++){
+            System.out.println("Pake For "+j);
+        }
+
+        int choice = 3;
+        switch (choice){
+            case 1:
+                System.out.println("Regular");
+                break;
+            case 2:
+                System.out.println("Member");
+                break;
+            case 3:
+                System.out.println("Premium");
+                break;
+            default:
+                System.out.println("Anda Tidak Terdaftar");
+                break;
+        }
+
+
 
         // Fahmi Widianto.
 
@@ -75,6 +124,7 @@ public class ControlFlow {
         // Rezky Wahyuda S.
 
         // Salma Meldiyana.
+
         int v;
         {
             v=8;
@@ -98,7 +148,7 @@ public class ControlFlow {
         } while (balance==300);
 
         System.out.print("Select an option (1, 2) ");
-        int choice = in.nextInt();
+        choice = in.nextInt();
         switch (choice)
         {
             case 1:
